@@ -21,6 +21,7 @@ namespace Demoproject.Controllers
             //this.iadminTokenManager = iadminTokenManager;
         }
         [HttpGet("GetAllUsers")]
+          [AllowAnonymous]
         public async Task<ActionResult> GetAllUsers()
         {
             try
