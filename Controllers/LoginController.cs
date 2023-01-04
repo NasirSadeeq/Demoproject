@@ -17,6 +17,7 @@ namespace Demoproject.Controllers
             [HttpPost("Login")]
             public IActionResult Login([FromBody] UserLogin ulogin)
             {
+                console.writeline("hello this is testing");
                 var Token = tokenManager.Authenticate(ulogin.Email.ToLower(), ulogin.Password);
                 if (string.IsNullOrEmpty(Token))
                     return Unauthorized();

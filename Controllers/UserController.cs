@@ -190,7 +190,7 @@ namespace Demoproject.Controllers
             }
 
         }
-
+    //Logout endpoint 
         [HttpPost]
         [Route("LogOut")]
         public IActionResult LogOut()
